@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PanelName>visionox ili7838a</PanelName>
+<PanelDescription>visionox cmd mode dsi panel(1080*2412 30bpp)</PanelDescription>
+<Group id="Active Timing">
+ <HorizontalActive>1080</HorizontalActive>
+ <HorizontalFrontPorch>32</HorizontalFrontPorch>
+ <HorizontalBackPorch>40</HorizontalBackPorch>
+ <HorizontalSyncPulse>8</HorizontalSyncPulse>
+ <VerticalActive>2412</VerticalActive>
+ <VerticalFrontPorch>8</VerticalFrontPorch>
+ <VerticalBackPorch>20</VerticalBackPorch>
+ <VerticalSyncPulse>4</VerticalSyncPulse>
+</Group>
+<Group id="Display Interface">
+ <InterfaceType>9</InterfaceType>
+ <InterfaceColorFormat>3</InterfaceColorFormat>
+</Group>
+<Group id="DSI Interface">
+ <DSIChannelId>2</DSIChannelId>
+ <DSIVirtualId>0</DSIVirtualId>
+ <DSIColorFormat>36</DSIColorFormat>
+ <DSITrafficMode>2</DSITrafficMode>
+ <DSILanes>4</DSILanes>
+ <DSIRefreshRate>0x780000</DSIRefreshRate>
+ <DSIEscapeClockFrequency>9600000</DSIEscapeClockFrequency>
+ <DSIEnableAutoRefresh>True</DSIEnableAutoRefresh>
+ <DSIAutoRefreshFrameNumDiv>1</DSIAutoRefreshFrameNumDiv>
+ <DSIInitMasterTime units='integer'>32</DSIInitMasterTime>
+ <DSILP11AtInit units='Bool'>1</DSILP11AtInit>
+ <DSITECheckEnable>True</DSITECheckEnable>
+ <DSITEUsingDedicatedTEPin>True</DSITEUsingDedicatedTEPin>
+ <DSITEvSyncStartPos>2412</DSITEvSyncStartPos>
+ <DSITEvSyncInitVal>2412</DSITEvSyncInitVal>
+ <DSIBitClockFrequency>978000000</DSIBitClockFrequency>
+ <DSITimingHSRequestOverride>True</DSITimingHSRequestOverride>
+ <DSITimingHSRequestValue>7</DSITimingHSRequestValue>
+ <DSILP11AtInit>True</DSILP11AtInit>
+ <DSIDSCEnable>True</DSIDSCEnable>
+ <DSIDSCMajor>1</DSIDSCMajor>
+ <DSIDSCMinor>1</DSIDSCMinor>
+ <DSIDSCScr>1</DSIDSCScr>
+ <DSIDSCProfileID>0x8</DSIDSCProfileID>
+ <DSIDSCSliceWidth>540</DSIDSCSliceWidth>
+ <DSIDSCSliceHeight>12</DSIDSCSliceHeight>
+ <DSIDSCSlicePerPacket>2</DSIDSCSlicePerPacket>
+ <DSIControllerMapping>
+  00
+ </DSIControllerMapping>
+</Group>
+ <DSIInitSequence>
+39 FF 78 38 0B
+39 02 00
+39 17 EB
+39 18 EB
+39 19 EB
+39 1A EB
+39 1B EB
+39 1C EB
+39 1D EB
+39 FF 78 38 0A
+39 37 4F
+39 38 90
+39 FF 78 38 00
+39 55 03
+
+39 FF 78 38 17
+39 20 00
+
+39 FF 78 38 08
+39 45 4C
+
+39 FF 78 38 02
+39 38 11
+
+39 FF 78 38 07
+39 29 01
+39 20 00 00 00 00 00 11 00 00 ab 30 80 09 6c 04 38 00 0c 02 1c 02 1c 02 00 02 52 00 20 00 ff 00 07 00 0f 0a e9 08 7a 18 00 10 f0 07 10 20 00 06 0f 0f 33 0e 1c 2a 38 46 54 62 69 70 77 79 7b 7d 7e 02 02 22 00 2a 40 2a be 3a fc 3a fa 3a f8 3b 38 3b 78 3b b6 4b b6 4b f4 4b f4 6c 34 84 74 00 00 00 00 00 00
+
+39 FF 78 38 01
+39 48 00
+39 53 00
+39 5E 00
+39 69 00
+39 FF 78 38 10
+39 84 81
+
+39 FF 78 38 00
+39 95 10
+39 35 00
+39 53 20
+39 51 00 00
+
+05 11
+FF 79
+
+39 FF 78 38 08
+39 57 25
+39 FF 78 38 06
+39 C6 01
+
+39 FF 78 38 00
+05 29
+FF 46
+
+ </DSIInitSequence>
+ <DSITermSequence>
+ 05 28
+ FF 0A
+ 05 10
+ FF 78
+ </DSITermSequence>
+<Group id='Backlight Configuration'>
+ <BacklightType>3</BacklightType>
+ <BacklightBitWidth>12</BacklightBitWidth>
+ <BacklightDefault units='Percentage'>100</BacklightDefault>
+ <BacklightPmicControlType>0</BacklightPmicControlType>
+ <DisplayResetInfo>0 10000 10000 10000 0</DisplayResetInfo>
+</Group>
+

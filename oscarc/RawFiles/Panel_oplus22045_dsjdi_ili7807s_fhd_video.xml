@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PanelName>ILI7808S video</PanelName>
+<PanelDescription>ILI7808S video mode dsi fhd panel</PanelDescription>
+<Group id="Active Timing">
+    <HorizontalActive>1080</HorizontalActive>
+    <HorizontalFrontPorch>120</HorizontalFrontPorch>
+    <HorizontalBackPorch>130</HorizontalBackPorch>
+    <HorizontalSyncPulse>4</HorizontalSyncPulse>
+    <HorizontalSyncSkew>0</HorizontalSyncSkew>
+    <HorizontalLeftBorder>0</HorizontalLeftBorder>
+    <HorizontalRightBorder>0</HorizontalRightBorder>
+    <VerticalActive>2400</VerticalActive>
+    <VerticalFrontPorch>40</VerticalFrontPorch>
+    <VerticalBackPorch>47</VerticalBackPorch>
+    <VerticalSyncPulse>4</VerticalSyncPulse>
+ <VerticalSyncSkew>0</VerticalSyncSkew>
+ <VerticalTopBorder>0</VerticalTopBorder>
+ <VerticalBottomBorder>0</VerticalBottomBorder>
+</Group>
+<Group id="Display Interface">
+    <InterfaceType>8</InterfaceType>
+ <InterfaceColorFormat>3</InterfaceColorFormat>
+</Group>
+<Group id="DSI Interface">
+    <DSIChannelId>1</DSIChannelId>
+ <DSIVirtualId>0</DSIVirtualId>
+ <DSIColorFormat>36</DSIColorFormat>
+ <DSITrafficMode>2</DSITrafficMode>
+ <DSILanes>4</DSILanes>
+ <DSIDSCEnable>True</DSIDSCEnable>
+ <DSIDSCScr>0</DSIDSCScr>
+ <DSIDSCProfileID>4</DSIDSCProfileID>
+ <DSIDSCSliceWidth>540</DSIDSCSliceWidth>
+ <DSIDSCSliceHeight>12</DSIDSCSliceHeight>
+ <DSILP11AtInit>True</DSILP11AtInit>
+ <DSIClockHSForceRequest>1</DSIClockHSForceRequest>
+ <DSILowPowerModeInBLLPEOF>True</DSILowPowerModeInBLLPEOF>
+ <DSILowPowerModeInBLLP>True</DSILowPowerModeInBLLP>
+ <DSIRefreshRate>0x780000</DSIRefreshRate>
+ <DSIDynamicRefreshRates>0x77E000 0x78A200</DSIDynamicRefreshRates>
+ <DSICmdSwapInterface>False</DSICmdSwapInterface>
+ <DSICmdUsingTrigger>False</DSICmdUsingTrigger>
+ <DSIDSCSlicePerPacket>2</DSIDSCSlicePerPacket>
+ <DSIControllerMapping>
+  00
+ </DSIControllerMapping>
+</Group>
+<DSIInitSequence>
+39 FF 78 07 06
+15 3E E2
+15 48 0F
+15 4D FF
+15 4E FF
+15 4F 23
+15 C7 05
+
+39 FF 78 07 0B
+15 E7 4B
+15 E8 03
+
+39 FF 78 07 02
+15 1B 02
+39 FF 78 07 04
+15 BD 01
+39 FF 78 07 07
+15 29 CF
+
+39 FF 78 07 06
+15 08 20
+39 FF 78 07 03
+15 83 20
+15 84 01
+
+39 FF 78 07 03
+15 86 47
+15 87 56
+15 AF 18
+15 8C E2
+15 8D E3
+15 8E E5
+15 8F E6
+15 90 E9
+15 91 EB
+15 92 EE
+15 93 F0
+15 94 F6
+15 95 FA
+
+15 96 BF
+15 97 C4
+15 98 C7
+15 99 C9
+15 9A CF
+15 9B D4
+15 9C DA
+15 9D E2
+15 9E EB
+15 9F FA
+
+39 FF 78 07 0B
+15 94 84
+15 95 10
+15 96 03
+15 97 03
+15 98 65
+15 99 65
+15 9A 41
+15 9B AB
+15 9C 02
+15 9D 02
+15 9E 2A
+15 9F 2A
+
+39 FF 78 07 0E
+15 05 20
+39 FF 78 07 0C
+15 80 3F
+15 81 E8
+15 82 3F
+15 83 E8
+
+39 FF 78 07 0E
+15 45 11
+15 46 29
+15 47 20
+15 49 58
+15 B0 00
+15 B1 2E
+15 C0 02
+15 C2 2E
+15 C3 2E
+15 C4 2E
+15 C5 2E
+15 C6 2E
+15 C7 2E
+15 C8 2E
+15 C9 2E
+15 4D 5B
+
+39 FF 78 07 00
+15 53 24
+15 55 00
+15 35 00
+
+39 FF 78 07 00
+15 11 00
+FF 60
+15 29 00
+FF 14
+</DSIInitSequence>
+<DSITermSequence>
+ 05 28
+ FF 14
+ 05 10
+ FF 78
+</DSITermSequence>
+<Group id='Backlight Configuration'>
+    <BacklightType>3</BacklightType>
+    <BacklightPmicControlType>0</BacklightPmicControlType>
+    <BacklightDefault>39</BacklightDefault>
+    <BacklightBitWidth>12</BacklightBitWidth>
+    <DisplayResetInfo>0 10000 10000 10000 0</DisplayResetInfo>
+</Group>
